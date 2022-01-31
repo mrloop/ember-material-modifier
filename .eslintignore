@@ -1,0 +1,16 @@
+# compiled output
+/test-app/dist/
+/test-app/tmp/
+/scenario
+/dist
+
+# dependencies
+/node_modules/
+/test-app/node_modules
+
+# misc
+/coverage/
+!.*
+.*/
+.eslintcache
+
