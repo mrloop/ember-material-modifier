@@ -41,7 +41,6 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^0.50.0",
-    "@material/list": "^13.0.0",
     "ember-modifier": "^3.1.0"
   },
   "devDependencies": {
@@ -55,6 +54,7 @@
     "@embroider/webpack-latest": "npm:@embroider/webpack@latest",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
+    "@material/list": "^13.0.0",
     "@rollup/plugin-babel": "^5.3.0",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
@@ -118,7 +118,7 @@
     "main": "addon-main.js",
     "public-assets": {},
     "app-js": {
-      "./components/mdc-list.js": "./dist/_app_/components/mdc-list.js",
+      "./css-load.js": "./dist/_app_/css-load.js",
       "./modifiers/material.js": "./dist/_app_/modifiers/material.js"
     }
   },
