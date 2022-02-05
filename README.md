@@ -148,22 +148,22 @@ You can use the <a href="https://material.io/resources/color" target="_blank" re
 
 The CSS is lazy loaded when the material design components class is instantiated. It is loaded when the modifier is run after the HTML has been rendered. If it is the first time the material design component has been loaded there will be a noticeable delay until the CSS is applied, you will see the component unstyled.
 
-To prevent this you can eager load the CSS for the material design components you use in the application router. For instance if you use `{{material 'button'}}` in one of your templates add `cssLoad('button')` to the beforeModel hook of your application route.
+To prevent this you can eager load the CSS for the material design components you use in the application router. For instance if you use `{{material 'button'}}` in one of your templates add `importCss('button')` to the beforeModel hook of your application route.
 
 _app/controller/application.js_
 ```js
 import Route from '@ember/routing/route';
 
-import cssLoad from 'ember-material-modifier/css-load';
+import importCss from 'ember-material-modifier/import-css';
 
 export default class ApplicationRoute extends Route {
   beforeModel() {
-    return cssLoad('button');
+    return importCss('button');
   }
 }
 ```
 
-It should be possible to remove this `cssLoad` and eager load the needed material design CSS without it. The need to call `cssLoad` will hopefully be removed.
+It should be possible to remove this `importCss` and eager load the needed material design CSS without it. The need to call `importCss` will hopefully be removed.
 
 
 ## Contributing

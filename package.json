@@ -206,7 +206,7 @@
     "main": "addon-main.js",
     "public-assets": {},
     "app-js": {
-      "./css-load.js": "./dist/_app_/css-load.js",
+      "./import-css.js": "./dist/_app_/import-css.js",
       "./modifiers/material.js": "./dist/_app_/modifiers/material.js"
     }
   },

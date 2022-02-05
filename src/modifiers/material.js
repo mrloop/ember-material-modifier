@@ -1,5 +1,5 @@
 import { modifier } from 'ember-modifier';
-import cssLoad from '../css-load.js';
+import importCss from '../import-css.js';
 
 function className(name) {
   return `MDC${name.replace(/^\w/, (c) => c.toUpperCase())}`;
@@ -10,7 +10,7 @@ export default modifier(function material(element, [name, register]) {
   // cause flash of unstyled content
   // need to add build time step to add css to head / content-for
   // e.g. when build sees {{material 'list'}} in template add link to css in head
-  cssLoad(name);
+  importCss(name);
 
   //https://webpack.js.org/api/module-methods/#dynamic-expressions-in-import
   let initPromise = import(`@material/${name}/dist/mdc.${name}.js`).then(
