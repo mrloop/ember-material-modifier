@@ -1,3 +1,4 @@
+# Changelog
 
 ## v0.1.0 (2022-02-05)
 
@@ -11,5 +12,3 @@
 
 #### Committers: 1
 - Ewan McDougall ([@mrloop](https://github.com/mrloop))
-
-# Changelog
