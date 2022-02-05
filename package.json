@@ -1,7 +1,7 @@
 {
   "name": "ember-material-modifier",
   "version": "0.1.0",
-  "description": "Ember Material Design Components",
+  "description": "Ember Material Design integration",
   "keywords": [
     "ember-addon",
     "material",
