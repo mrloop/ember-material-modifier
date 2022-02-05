@@ -127,27 +127,69 @@
     "@material/top-app-bar": "*"
   },
   "peerDependenciesMeta": {
-    "@material/banner": { "optional": true },
-    "@material/button": { "optional": true },
-    "@material/card": { "optional": true },
-    "@material/checkbox": { "optional": true },
-    "@material/chips": { "optional": true },
-    "@material/data-table": { "optional": true },
-    "@material/dialog": { "optional": true },
-    "@material/drawer": { "optional": true },
-    "@material/fab": { "optional": true },
-    "@material/image-list": { "optional": true },
-    "@material/list": { "optional": true },
-    "@material/menu": { "optional": true },
-    "@material/progress-indicator": { "optional": true },
-    "@material/radio": { "optional": true },
-    "@material/sliders": { "optional": true },
-    "@material/snackbar": { "optional": true },
-    "@material/switch": { "optional": true },
-    "@material/tab-bar": { "optional": true },
-    "@material/textfield": { "optional": true },
-    "@material/tool-top": { "optional": true },
-    "@material/top-app-bar": { "optional": true }
+    "@material/banner": {
+      "optional": true
+    },
+    "@material/button": {
+      "optional": true
+    },
+    "@material/card": {
+      "optional": true
+    },
+    "@material/checkbox": {
+      "optional": true
+    },
+    "@material/chips": {
+      "optional": true
+    },
+    "@material/data-table": {
+      "optional": true
+    },
+    "@material/dialog": {
+      "optional": true
+    },
+    "@material/drawer": {
+      "optional": true
+    },
+    "@material/fab": {
+      "optional": true
+    },
+    "@material/image-list": {
+      "optional": true
+    },
+    "@material/list": {
+      "optional": true
+    },
+    "@material/menu": {
+      "optional": true
+    },
+    "@material/progress-indicator": {
+      "optional": true
+    },
+    "@material/radio": {
+      "optional": true
+    },
+    "@material/sliders": {
+      "optional": true
+    },
+    "@material/snackbar": {
+      "optional": true
+    },
+    "@material/switch": {
+      "optional": true
+    },
+    "@material/tab-bar": {
+      "optional": true
+    },
+    "@material/textfield": {
+      "optional": true
+    },
+    "@material/tool-top": {
+      "optional": true
+    },
+    "@material/top-app-bar": {
+      "optional": true
+    }
   },
   "engines": {
     "node": "12.* || 14.* || >= 16"
