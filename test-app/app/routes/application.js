@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 
-import cssLoad from 'ember-material-design-components/css-load';
+import cssLoad from 'ember-material-modifier/css-load';
 
 export default class ApplicationRoute extends Route {
   beforeModel() {

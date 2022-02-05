@@ -1,11 +1,11 @@
 {
-  "name": "ember-material-design-components",
+  "name": "ember-material-modifier",
   "version": "6.1.0",
   "description": "Ember Material Design Components",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "https://github.com/mrloop/ember-material-design-components",
+  "repository": "https://github.com/mrloop/ember-material-modifier",
   "license": "MIT",
   "author": "Ewan McDougall <ewan@mrloop.com>",
   "exports": {
