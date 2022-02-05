@@ -1,4 +1,4 @@
-# ember-material-design-components
+# ember-material-modifier
 
 Lightweight Ember.js <a href="https://material.io/components?platform=web" target="_blank" rel="noopener noreferrer">material design</a> integration.
 
@@ -13,13 +13,13 @@ Lightweight Ember.js <a href="https://material.io/components?platform=web" targe
 ## Installation
 
 ```
-ember install ember-material-design-components
+ember install ember-material-modifier
 ```
 
 
 ## Usage
 
-ember-material-design-components is designed to be as minimal and unobtrusive as possible. It only downloads the JavaScript and CSS of google material design components that you use.
+ember-material-modifier is designed to be as minimal and unobtrusive as possible. It only downloads the JavaScript and CSS of google material design components that you use.
 
 ### Button Example
 
@@ -38,7 +38,7 @@ Then you copy the example <a href="https://material.io/components/buttons/web#te
 </button>
 ```
 
-Next you add the `ember-material-design-components` modifier `{{material}}`
+Next you add the `ember-material-modifier` modifier `{{material}}`
 
 ```hbs
 <button class="mdc-button" {{material 'button'}}>
@@ -154,7 +154,7 @@ _app/controller/application.js_
 ```js
 import Route from '@ember/routing/route';
 
-import cssLoad from 'ember-material-design-components/css-load';
+import cssLoad from 'ember-material-modifier/css-load';
 
 export default class ApplicationRoute extends Route {
   beforeModel() {

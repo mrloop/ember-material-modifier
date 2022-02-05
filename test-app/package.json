@@ -50,7 +50,7 @@
     "ember-resolver": "^8.0.2",
     "ember-source": "~3.28.0",
     "ember-template-lint": "^3.6.0",
-    "ember-material-design-components": "file:..",
+    "ember-material-modifier": "file:..",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-ember": "^10.5.4",

@@ -3,7 +3,7 @@
 ## Installation
 
 - `git clone <repository-url>`
-- `cd ember-material-design-components`
+- `cd ember-material-modifier`
 - `yarn install`
 
 ## Linting
