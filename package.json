@@ -3,7 +3,11 @@
   "version": "6.1.0",
   "description": "Ember Material Design Components",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "material",
+    "design",
+    "ember",
+    "modifier"
   ],
   "repository": "https://github.com/mrloop/ember-material-modifier",
   "license": "MIT",
