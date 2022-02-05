@@ -1018,6 +1018,13 @@
     mkdirp "^1.0.4"
     silent-error "^1.1.1"
 
+"@ember/string@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@ember/string/-/string-3.0.0.tgz#e3a3cc7874c9f64eadfdac644d8b1238721ce289"
+  integrity sha512-T+7QYDp8ItlQseNveK2lL6OsOO5wg7aNQ/M2RpO8cGwM80oZOnr/Y35HmMfu4ejFEc+F1LPegvu7LGfeJOicWA==
+  dependencies:
+    ember-cli-babel "^7.26.6"
+
 "@ember/test-helpers@^2.4.2":
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/@ember/test-helpers/-/test-helpers-2.6.0.tgz#d687515c6ab49ba72717fc62046970ef4a72ea9c"
@@ -1117,6 +1124,7 @@
     yargs "^17.0.1"
 
 "@embroider/core-latest@npm:@embroider/core@latest", "@embroider/core@1.0.0":
+  name "@embroider/core-latest"
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@embroider/core/-/core-1.0.0.tgz#c8c4187268eee6cb23208be3e0fee035c58e10c9"
   integrity sha512-mmMdkuByY87oyfTYnUpGa3lxT2rzhlsiTW+kwU2AjfEargxxi5H01oZP89FKLsZ1o4bII+njYLVeAO57il/JOg==
@@ -1500,6 +1508,19 @@
   resolved "https://registry.yarnpkg.com/@material/feature-targeting/-/feature-targeting-13.0.0.tgz#7bc7840b40930b6831101a22882acdd0329591c0"
   integrity sha512-QJClfeaA4EMyAxKJy9WR0Nx+/VwSZCkhGLUVBG9NhxqYGfl/LtaeaidrNm32vYEoNZAofN92VD2RwQTRwp/dMQ==
   dependencies:
+    tslib "^2.1.0"
+
+"@material/form-field@^13.0.0":
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/@material/form-field/-/form-field-13.0.0.tgz#59f50b342bc20562fa2c78c17ac4385236f89c99"
+  integrity sha512-cXs5uYA89KgrXrU1UYkl52JizeIK3Mx9LjBw4ZYiyQJzFaBTPYsYWGSJMad1HZhWlRiigGTyN1M9ePIxtBpi0Q==
+  dependencies:
+    "@material/base" "^13.0.0"
+    "@material/feature-targeting" "^13.0.0"
+    "@material/ripple" "^13.0.0"
+    "@material/rtl" "^13.0.0"
+    "@material/theme" "^13.0.0"
+    "@material/typography" "^13.0.0"
     tslib "^2.1.0"
 
 "@material/list@^13.0.0":

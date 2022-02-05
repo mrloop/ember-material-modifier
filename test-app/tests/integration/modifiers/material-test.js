@@ -21,4 +21,14 @@ module('Integration | Modifier | material', function (hooks) {
 
     assert.ok(true);
   });
+
+  test('it works with dasherize @material package names', async function (assert) {
+    assert.expect(2);
+    this.register = (inst) => {
+      assert.equal(inst.constructor.name, 'MDCFormField');
+    };
+    await render(hbs`<div {{material 'form-field' this.register}}></div>`);
+
+    assert.ok(true);
+  });
 });
