@@ -23,13 +23,13 @@ ember-material-modifier is designed to be as minimal and unobtrusive as possible
 
 ### Button Example
 
-For instance you want to use `@material/button`, you have a look at the docs https://material.io/components/buttons/web#using-buttons. You first install the package
+For instance if you want to use `@material/button` install the package
 
 ```sh
 npm install @material/button
 ```
 
-Then you copy the example <a href="https://material.io/components/buttons/web#text-button" target="_blank" rel="noopener noreferrer">html</a> to one of your templates.
+Have a look at the material design docs for the component https://material.io/components/buttons/web#using-buttons. Then copy the example <a href="https://material.io/components/buttons/web#text-button" target="_blank" rel="noopener noreferrer">html</a> to one of your templates.
 
 ```hbs
 <button class="mdc-button">
@@ -73,7 +73,7 @@ _app/templates/application.hbs_
 
 ### Register component
 
-The `{{material}}` modifier takes two positional arguments. The first is the name of the material design component. For instance you want to use the package `@material/menu` then the modifier is `{{material 'menu'}}. You can also pass a second arguement to register the instance of material design component class with your application code.
+The `{{material}}` modifier takes two positional arguments. The first is the name of the material design component. For instance you want to use the package `@material/menu` then the modifier is `{{material 'menu'}}`. You can also pass a second arguement to register the instance of material design component class with your application code.
 
 
 ```hbs
