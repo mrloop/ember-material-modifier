@@ -44,6 +44,7 @@
     "prepublishOnly": "rollup --config"
   },
   "dependencies": {
+    "@ember/string": "^3.0.0",
     "@embroider/addon-shim": "^0.50.0",
     "ember-modifier": "^3.1.0"
   },
@@ -58,6 +59,7 @@
     "@embroider/webpack-latest": "npm:@embroider/webpack@latest",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
+    "@material/form-field": "^13.0.0",
     "@material/list": "^13.0.0",
     "@rollup/plugin-babel": "^5.3.0",
     "babel-eslint": "^10.1.0",
@@ -117,6 +119,7 @@
     "@material/dialog": "*",
     "@material/drawer": "*",
     "@material/fab": "*",
+    "@material/form-field": "*",
     "@material/image-list": "*",
     "@material/list": "*",
     "@material/menu": "*",
@@ -127,7 +130,7 @@
     "@material/switch": "*",
     "@material/tab-bar": "*",
     "@material/textfield": "*",
-    "@material/tool-top": "*",
+    "@material/tooltip": "*",
     "@material/top-app-bar": "*"
   },
   "peerDependenciesMeta": {
@@ -156,6 +159,9 @@
       "optional": true
     },
     "@material/fab": {
+      "optional": true
+    },
+    "@material/form-field": {
       "optional": true
     },
     "@material/image-list": {
@@ -188,7 +194,7 @@
     "@material/textfield": {
       "optional": true
     },
-    "@material/tool-top": {
+    "@material/tool-tip": {
       "optional": true
     },
     "@material/top-app-bar": {
