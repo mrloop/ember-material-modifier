@@ -29,7 +29,7 @@ For instance if you want to use `@material/button` install the package
 npm install @material/button
 ```
 
-Have a look at the material design docs for the component https://material.io/components/buttons/web#using-buttons. Then copy the example <a href="https://material.io/components/buttons/web#text-button" target="_blank" rel="noopener noreferrer">html</a> to one of your templates.
+Have a look at the material design docs for the component https://material.io/components/buttons/web#using-buttons or https://github.com/material-components/material-components-web/tree/master/packages/mdc-button. Then copy the example <a href="https://material.io/components/buttons/web#text-button" target="_blank" rel="noopener noreferrer">html</a> to one of your templates.
 
 ```hbs
 <button class="mdc-button">
