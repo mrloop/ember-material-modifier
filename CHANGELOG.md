@@ -1,5 +1,17 @@
 # Changelog
 
+
+## v0.1.2 (2022-02-06)
+
+#### :bug: Bug Fix
+* [#4](https://github.com/mrloop/ember-material-modifier/pull/4) Handle @material package names with dashes ([@mrloop](https://github.com/mrloop))
+
+#### :memo: Documentation
+* [#5](https://github.com/mrloop/ember-material-modifier/pull/5) Add link in docs to github docs in addition to material.io docs ([@mrloop](https://github.com/mrloop))
+
+#### Committers: 1
+- Ewan McDougall ([@mrloop](https://github.com/mrloop))
+
 ## v0.1.0 (2022-02-05)
 
 #### :memo: Documentation
