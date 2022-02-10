@@ -1,6 +1,7 @@
 import { modifier } from 'ember-modifier';
 import importCss from '../import-css.js';
 import { camelize } from '@ember/string';
+import { waitForPromise } from '@ember/test-waiters';
 
 function findClass(Module, name) {
   let normalizedName = `MDC${camelize(name)}`.toLowerCase();
@@ -16,7 +17,7 @@ async function initClass({ element, name, register }) {
 
   let Module;
   try {
-    Module = await promise;
+    Module = await waitForPromise(promise);
   } catch (e) {
     // ignore as some @material packages are CSS only
   }
