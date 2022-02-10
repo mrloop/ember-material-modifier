@@ -31,4 +31,11 @@ module('Integration | Modifier | material', function (hooks) {
 
     assert.ok(true);
   });
+
+  test('it works with CSS only @material packages', async function (assert) {
+    await render(
+      hbs`<button {{material 'button'}} class='mdc-button'>Press me</button>`
+    );
+    assert.ok(true);
+  });
 });

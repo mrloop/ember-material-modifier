@@ -8,12 +8,20 @@ function className(name) {
 
 async function initClass({ element, name, register }) {
   //https://webpack.js.org/api/module-methods/#dynamic-expressions-in-import
-  let initPromise = import(`@material/${name}/dist/mdc.${camelize(name)}.js`);
+  let promise = import(`@material/${name}/dist/mdc.${camelize(name)}.js`);
 
-  let Module = await initPromise;
-  let Class = Module[className(name)];
-  let instance = new Class(element);
-  register?.(instance);
+  let Module;
+  try {
+    Module = await promise;
+  } catch (e) {
+    // ignore as some @material packages are CSS only
+  }
+  if (Module) {
+    let Class = Module[className(name)];
+    let instance = new Class(element);
+    register?.(instance);
+    return instance;
+  }
 }
 
 //https://material.io/components?platform=web
@@ -26,6 +34,6 @@ export default modifier(function material(element, [name, register]) {
   let initPromise = initClass({ element, name, register });
 
   return () => {
-    initPromise.then((component) => component.destroy());
+    initPromise.then((component) => component?.destroy());
   };
 });

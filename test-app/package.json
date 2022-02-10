@@ -22,8 +22,9 @@
     "test:ember": "ember test"
   },
   "dependencies": {
-    "@material/list": "^13.0.0",
-    "@material/form-field": "^13.0.0"
+    "@material/button": "^13.0.0",
+    "@material/form-field": "^13.0.0",
+    "@material/list": "^13.0.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
