@@ -6,6 +6,16 @@ function className(name) {
   return `MDC${capitalize(camelize(name))}`;
 }
 
+async function initClass({ element, name, register }) {
+  //https://webpack.js.org/api/module-methods/#dynamic-expressions-in-import
+  let initPromise = import(`@material/${name}/dist/mdc.${camelize(name)}.js`);
+
+  let Module = await initPromise;
+  let Class = Module[className(name)];
+  let instance = new Class(element);
+  register?.(instance);
+}
+
 //https://material.io/components?platform=web
 export default modifier(function material(element, [name, register]) {
   // cause flash of unstyled content
@@ -13,15 +23,7 @@ export default modifier(function material(element, [name, register]) {
   // e.g. when build sees {{material 'list'}} in template add link to css in head
   importCss(name);
 
-  //https://webpack.js.org/api/module-methods/#dynamic-expressions-in-import
-  let initPromise = import(
-    `@material/${name}/dist/mdc.${camelize(name)}.js`
-  ).then((Module) => {
-    let klass = Module[className(name)];
-    let instance = new klass(element);
-    register?.(instance);
-    return instance;
-  });
+  let initPromise = initClass({ element, name, register });
 
   return () => {
     initPromise.then((component) => component.destroy());
