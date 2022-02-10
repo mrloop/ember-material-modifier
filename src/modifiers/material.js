@@ -1,9 +1,13 @@
 import { modifier } from 'ember-modifier';
 import importCss from '../import-css.js';
-import { camelize, capitalize } from '@ember/string';
+import { camelize } from '@ember/string';
 
-function className(name) {
-  return `MDC${capitalize(camelize(name))}`;
+function findClass(Module, name) {
+  let normalizedName = `MDC${camelize(name)}`.toLowerCase();
+  let key = Object.keys(Module).find(
+    (key) => key.toLowerCase() === normalizedName
+  );
+  return Module[key];
 }
 
 async function initClass({ element, name, register }) {
@@ -17,7 +21,7 @@ async function initClass({ element, name, register }) {
     // ignore as some @material packages are CSS only
   }
   if (Module) {
-    let Class = Module[className(name)];
+    let Class = findClass(Module, name);
     let instance = new Class(element);
     register?.(instance);
     return instance;
