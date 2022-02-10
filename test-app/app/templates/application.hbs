@@ -1,32 +1,40 @@
-{{page-title "Ember Material Design Components"}}
+{{page-title 'Ember Material Design Components'}}
 
-<ul {{material 'list'}} {{on 'MDCList:action' this.listActionHandler}} class="mdc-list mdc-list--two-line">
-  <li {{on 'click' this.handleListItemClick}} class="mdc-list-item" tabindex="0">
-    <span class="mdc-list-item__ripple"></span>
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">Two-line item</span>
-      <span class="mdc-list-item__secondary-text">Secondary text</span>
+<ul
+  {{material 'list'}}
+  {{on 'MDCList:action' this.listActionHandler}}
+  class='mdc-list mdc-list--two-line'
+>
+  <li
+    {{on 'click' this.handleListItemClick}}
+    class='mdc-list-item'
+    tabindex='0'
+  >
+    <span class='mdc-list-item__ripple'></span>
+    <span class='mdc-list-item__text'>
+      <span class='mdc-list-item__primary-text'>Two-line item</span>
+      <span class='mdc-list-item__secondary-text'>Secondary text</span>
     </span>
   </li>
-  <li class="mdc-list-item">
-    <span class="mdc-list-item__ripple"></span>
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">Two-line item</span>
-      <span class="mdc-list-item__secondary-text">Secondary text</span>
+  <li class='mdc-list-item'>
+    <span class='mdc-list-item__ripple'></span>
+    <span class='mdc-list-item__text'>
+      <span class='mdc-list-item__primary-text'>Two-line item</span>
+      <span class='mdc-list-item__secondary-text'>Secondary text</span>
     </span>
   </li>
-  <li class="mdc-list-item">
-    <span class="mdc-list-item__ripple"></span>
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">Two-line item</span>
-      <span class="mdc-list-item__secondary-text">Secondary text</span>
+  <li class='mdc-list-item'>
+    <span class='mdc-list-item__ripple'></span>
+    <span class='mdc-list-item__text'>
+      <span class='mdc-list-item__primary-text'>Two-line item</span>
+      <span class='mdc-list-item__secondary-text'>Secondary text</span>
     </span>
   </li>
 </ul>
 
-<div {{material 'form-field'}} class="mdc-form-field mdc-form-field--nowrap">
-  <input type="checkbox" id="my-checkbox" />
-  <label for="my-checkbox">This some really really really long text</label>
+<div {{material 'form-field'}} class='mdc-form-field mdc-form-field--nowrap'>
+  <input type='checkbox' id='my-checkbox' />
+  <label for='my-checkbox'>This some really really really long text</label>
 </div>
 
 {{outlet}}
