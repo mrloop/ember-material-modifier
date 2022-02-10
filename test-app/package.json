@@ -22,12 +22,15 @@
     "test:ember": "ember test"
   },
   "dependencies": {
+    "@material/button": "^13.0.0",
+    "@material/form-field": "^13.0.0",
     "@material/list": "^13.0.0",
-    "@material/form-field": "^13.0.0"
+    "@material/textfield": "^13.0.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.4.2",
+    "@ember/test-waiters": "^3.0.1",
     "@embroider/test-setup": "^0.46.2",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
