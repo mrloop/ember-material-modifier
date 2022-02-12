@@ -2,6 +2,15 @@
 
 
 
+
+## v0.1.4 (2022-02-12)
+
+#### :bug: Bug Fix
+* [#8](https://github.com/mrloop/ember-material-modifier/pull/8) Add all @material/* packages as peerDependencies ([@mrloop](https://github.com/mrloop))
+
+#### Committers: 1
+- Ewan McDougall ([@mrloop](https://github.com/mrloop))
+
 ## v0.1.3 (2022-02-10)
 
 #### :bug: Bug Fix
