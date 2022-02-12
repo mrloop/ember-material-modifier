@@ -114,31 +114,68 @@
     "webpack": "^5.53.0"
   },
   "peerDependencies": {
+    "@material/animation": "*",
+    "@material/auto-init": "*",
     "@material/banner": "*",
+    "@material/base": "*",
     "@material/button": "*",
     "@material/card": "*",
     "@material/checkbox": "*",
     "@material/chips": "*",
+    "@material/circular-progress": "*",
     "@material/data-table": "*",
+    "@material/density": "*",
     "@material/dialog": "*",
+    "@material/dom": "*",
     "@material/drawer": "*",
+    "@material/elevation": "*",
     "@material/fab": "*",
+    "@material/feature-targeting": "*",
+    "@material/floating-label": "*",
     "@material/form-field": "*",
+    "@material/icon-button": "*",
     "@material/image-list": "*",
+    "@material/layout-grid": "*",
+    "@material/line-ripple": "*",
+    "@material/linear-progress": "*",
     "@material/list": "*",
     "@material/menu": "*",
+    "@material/menu-surface": "*",
+    "@material/notched-outline": "*",
     "@material/progress-indicator": "*",
     "@material/radio": "*",
+    "@material/ripple": "*",
+    "@material/rtl": "*",
+    "@material/segmented-button": "*",
+    "@material/select": "*",
+    "@material/shape": "*",
+    "@material/slider": "*",
     "@material/sliders": "*",
     "@material/snackbar": "*",
     "@material/switch": "*",
+    "@material/tab": "*",
     "@material/tab-bar": "*",
+    "@material/tab-indicator": "*",
+    "@material/tab-scroller": "*",
     "@material/textfield": "*",
+    "@material/theme": "*",
+    "@material/tokens": "*",
     "@material/tooltip": "*",
-    "@material/top-app-bar": "*"
+    "@material/top-app-bar": "*",
+    "@material/touch-target": "*",
+    "@material/typography": "*"
   },
   "peerDependenciesMeta": {
+    "@material/animation": {
+      "optional": true
+    },
+    "@material/auto-init": {
+      "optional": true
+    },
     "@material/banner": {
+      "optional": true
+    },
+    "@material/base": {
       "optional": true
     },
     "@material/button": {
@@ -153,22 +190,52 @@
     "@material/chips": {
       "optional": true
     },
+    "@material/circular-progress": {
+      "optional": true
+    },
     "@material/data-table": {
+      "optional": true
+    },
+    "@material/density": {
       "optional": true
     },
     "@material/dialog": {
       "optional": true
     },
+    "@material/dom": {
+      "optional": true
+    },
     "@material/drawer": {
+      "optional": true
+    },
+    "@material/elevation": {
       "optional": true
     },
     "@material/fab": {
       "optional": true
     },
+    "@material/feature-targeting": {
+      "optional": true
+    },
+    "@material/floating-label": {
+      "optional": true
+    },
     "@material/form-field": {
       "optional": true
     },
+    "@material/icon-button": {
+      "optional": true
+    },
     "@material/image-list": {
+      "optional": true
+    },
+    "@material/layout-grid": {
+      "optional": true
+    },
+    "@material/line-ripple": {
+      "optional": true
+    },
+    "@material/linear-progress": {
       "optional": true
     },
     "@material/list": {
@@ -177,10 +244,34 @@
     "@material/menu": {
       "optional": true
     },
+    "@material/menu-surface": {
+      "optional": true
+    },
+    "@material/notched-outline": {
+      "optional": true
+    },
     "@material/progress-indicator": {
       "optional": true
     },
     "@material/radio": {
+      "optional": true
+    },
+    "@material/ripple": {
+      "optional": true
+    },
+    "@material/rtl": {
+      "optional": true
+    },
+    "@material/segmented-button": {
+      "optional": true
+    },
+    "@material/select": {
+      "optional": true
+    },
+    "@material/shape": {
+      "optional": true
+    },
+    "@material/slider": {
       "optional": true
     },
     "@material/sliders": {
@@ -192,16 +283,40 @@
     "@material/switch": {
       "optional": true
     },
+    "@material/tab": {
+      "optional": true
+    },
     "@material/tab-bar": {
+      "optional": true
+    },
+    "@material/tab-indicator": {
+      "optional": true
+    },
+    "@material/tab-scroller": {
       "optional": true
     },
     "@material/textfield": {
       "optional": true
     },
+    "@material/theme": {
+      "optional": true
+    },
+    "@material/tokens": {
+      "optional": true
+    },
     "@material/tool-tip": {
       "optional": true
     },
+    "@material/tooltip": {
+      "optional": true
+    },
     "@material/top-app-bar": {
+      "optional": true
+    },
+    "@material/touch-target": {
+      "optional": true
+    },
+    "@material/typography": {
       "optional": true
     }
   },
