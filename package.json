@@ -304,9 +304,6 @@
     "@material/tokens": {
       "optional": true
     },
-    "@material/tool-tip": {
-      "optional": true
-    },
     "@material/tooltip": {
       "optional": true
     },
