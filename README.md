@@ -71,6 +71,11 @@ _app/templates/application.hbs_
 <MdcButton {{on 'click' this.handleButtonClicked}}/>Text Button</MdcButton>
 ```
 
+| :warning: WARNING          |
+|:---------------------------|
+| Many of the material.io HTML examples use the [Material Icons google font](https://fonts.google.com/icons?selected=Material+Icons), you either need to [install the font](https://developers.google.com/fonts/docs/material_icons#setup_method_1_using_via_google_fonts) or edit the example HTML to use an [alternative](https://github.com/ivanvotti/ember-svg-jar). |
+
+
 ### Register component
 
 The `{{material}}` modifier takes two positional arguments. The first is the name of the material design component. For instance you want to use the package `@material/menu` then the modifier is `{{material 'menu'}}`. You can also pass a second arguement to register the instance of material design component class with your application code.
