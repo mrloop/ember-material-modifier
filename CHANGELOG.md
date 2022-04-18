@@ -3,6 +3,19 @@
 
 
 
+
+## v0.1.5 (2022-04-18)
+
+#### :memo: Documentation
+* [#11](https://github.com/mrloop/ember-material-modifier/pull/11) Link to github docs rather then material.io ([@mrloop](https://github.com/mrloop))
+* [#9](https://github.com/mrloop/ember-material-modifier/pull/9) Add warning to README about icon font markup in example HTML ([@mrloop](https://github.com/mrloop))
+
+#### :house: Internal
+* [#10](https://github.com/mrloop/ember-material-modifier/pull/10) Remove misspelt peerDependenciesMeta key. ([@mrloop](https://github.com/mrloop))
+
+#### Committers: 1
+- Ewan McDougall ([@mrloop](https://github.com/mrloop))
+
 ## v0.1.4 (2022-02-12)
 
 #### :bug: Bug Fix
