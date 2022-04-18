@@ -1,5 +1,8 @@
 # ember-material-modifier
 
+[![Node CI](https://github.com/mrloop/ember-material-modifier/actions/workflows/ci.yml/badge.svg)](https://github.com/mrloop/ember-material-modifier/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/ember-material-modifier.svg)](https://www.npmjs.com/package/ember-material-modifier)
+
 Lightweight Ember.js <a href="https://material.io/components?platform=web" target="_blank" rel="noopener noreferrer">material design</a> integration.
 
 An Ember add-on for [Material Component for web](https://github.com/material-components/material-components-web/).
