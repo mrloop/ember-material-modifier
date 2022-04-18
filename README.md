@@ -2,6 +2,7 @@
 
 Lightweight Ember.js <a href="https://material.io/components?platform=web" target="_blank" rel="noopener noreferrer">material design</a> integration.
 
+An Ember add-on for [Material Component for web](https://github.com/material-components/material-components-web/).
 
 ## Compatibility
 
@@ -29,11 +30,12 @@ For instance if you want to use `@material/button` install the package
 npm install @material/button
 ```
 
-Have a look at the material design docs for the component https://material.io/components/buttons/web#using-buttons or https://github.com/material-components/material-components-web/tree/master/packages/mdc-button. Then copy the example <a href="https://material.io/components/buttons/web#text-button" target="_blank" rel="noopener noreferrer">html</a> to one of your templates.
+Have a look at the material design docs for the component  https://github.com/material-components/material-components-web/tree/master/packages/mdc-button. Then copy the example <a href="https://github.com/material-components/material-components-web/tree/master/packages/mdc-button#text-button-example" target="_blank" rel="noopener noreferrer">html</a> to one of your templates.
 
 ```hbs
 <button class="mdc-button">
   <span class="mdc-button__ripple"></span>
+  <span class="mdc-button__focus-ring"></span>
   <span class="mdc-button__label">Text Button</span>
 </button>
 ```
@@ -43,6 +45,7 @@ Next you add the `ember-material-modifier` modifier `{{material}}`
 ```hbs
 <button class="mdc-button" {{material 'button'}}>
   <span class="mdc-button__ripple"></span>
+  <span class="mdc-button__focus-ring"></span>
   <span class="mdc-button__label">Text Button</span>
 </button>
 ```
@@ -52,6 +55,7 @@ Event listeners are added as usual
 ```hbs
 <button class="mdc-button" {{material 'button'}} {{on 'click' this.handleButtonClicked}}>
   <span class="mdc-button__ripple"></span>
+  <span class="mdc-button__focus-ring"></span>
   <span class="mdc-button__label">Text Button</span>
 </button>
 ```
@@ -62,6 +66,7 @@ _app/components/mdc-button.hbs_
 ```hbs
 <button {{...attributes}} class="mdc-button" {{material 'button'}} >
   <span class="mdc-button__ripple"></span>
+  <span class="mdc-button__focus-ring"></span>
   <span class="mdc-button__label">{{yield}}</span>
 </button>
 ```
