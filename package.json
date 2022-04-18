@@ -57,7 +57,7 @@
     "@embroider/addon-dev": "^0.50.0",
     "@embroider/compat-latest": "npm:@embroider/compat@latest",
     "@embroider/core-latest": "npm:@embroider/core@latest",
-    "@embroider/test-setup": "^0.46.2",
+    "@embroider/test-setup": "0.50.2",
     "@embroider/webpack-latest": "npm:@embroider/webpack@latest",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
