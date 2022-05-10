@@ -1157,6 +1157,7 @@
     yargs "^17.0.1"
 
 "@embroider/core-latest@npm:@embroider/core@latest", "@embroider/core@1.6.0":
+  name "@embroider/core-latest"
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@embroider/core/-/core-1.6.0.tgz#95267ccd019bb250d4e207b13ee530bb1aec6c92"
   integrity sha512-VM+M09gtPu9Gg7byVyjkrGTtdKQWvgE/lodut/GJPhTq3Wnx/2ume4bKWAUTfJ9mQNF9EUiya8Sb44G5OMKJ9g==
@@ -5825,7 +5826,7 @@ ember-auto-import@^1.10.1:
     walk-sync "^0.3.3"
     webpack "^4.43.0"
 
-"ember-cli-3.20@npm:ember-cli@~3.20.0":
+"ember-cli-3.20@npm:ember-cli@3.20.2":
   version "3.20.2"
   resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.20.2.tgz#4a5411afc32a91eb81e4fa1e6f4bc950e838c132"
   integrity sha512-8ggRX+NXD9VkQt/9/GSMLcnswWNYTgE7Aw1uelexHdxGA1TqcjOjQ07ljVmgRwYVieknhDzhK3M0u3Xoa3x0HA==
@@ -5920,7 +5921,7 @@ ember-auto-import@^1.10.1:
     watch-detector "^1.0.0"
     yam "^1.0.0"
 
-"ember-cli-3.24@npm:ember-cli@~3.24.0":
+"ember-cli-3.24@npm:ember-cli@3.24.0":
   version "3.24.0"
   resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.24.0.tgz#dbda4938e74fdafe4da1c42b49356f9d14c10697"
   integrity sha512-dLurYpluRcE+XjCHy/JzUBcW4dBKhjmXH3zUjyof89gFjj+8EFjB0b2tqyS6buKqBasinVaX8lZZVIXYCdFtNA==
@@ -6533,7 +6534,7 @@ ember-cli-version-checker@^5.1.1, ember-cli-version-checker@^5.1.2:
     semver "^7.3.4"
     silent-error "^1.1.1"
 
-ember-cli@~3.28.0:
+ember-cli@3.28.5:
   version "3.28.5"
   resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.28.5.tgz#9c91266e412f6d537b47a88e4b63a2b56db35483"
   integrity sha512-Y/UdbUOTeKHGMCP3XtE5g14JUTYyeQTdjPvHuv11FFx5HQBtHqqWLY6U1ivMDukDkQ4i2v6TyaUcKVo4e8PtyQ==
@@ -6752,7 +6753,7 @@ ember-router-generator@^2.0.0:
     "@babel/traverse" "^7.4.5"
     recast "^0.18.1"
 
-"ember-source-3.20@npm:ember-source@~3.20.0":
+"ember-source-3.20@npm:ember-source@3.20.7":
   version "3.20.7"
   resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.20.7.tgz#090e8f7f3e669b3f48ed9fee2ec5e6a50fe695e4"
   integrity sha512-WeZ55BRi2kwFQCHydwLfbqJx04ONSrVsGs6IxK0VxNSgtSyQZ0ENLG5O9pad3uR7VeVhspazNPobaY38V8tEow==
@@ -6782,7 +6783,7 @@ ember-router-generator@^2.0.0:
     semver "^6.1.1"
     silent-error "^1.1.1"
 
-"ember-source-3.24@npm:ember-source@~3.24.0":
+"ember-source-3.24@npm:ember-source@3.24.6":
   version "3.24.6"
   resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.24.6.tgz#cf185b93fb16ad8475e98ebc47e6fb50b7de2556"
   integrity sha512-F/CNQQLeF0QFKz7ahJ0JQQBbbvL8sx5XhsNJ9GnfjLA9ozGE1/nFfgkIOrcFszIVjMZKmEvq6RdsbbhOptfeNg==
@@ -6922,7 +6923,7 @@ ember-source-channel-url@^3.0.0:
     semver "^7.3.4"
     silent-error "^1.1.1"
 
-ember-source@~3.28.0:
+ember-source@3.28.9:
   version "3.28.9"
   resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.28.9.tgz#804c56b2d71d3cc3decff15a3273bb35d668300a"
   integrity sha512-Fy7V3yvj+3oyo2+ke52aaihKMcFnnF7Oj9ixj547yzh2faqRfqouB5ZSiwXFH8rxw22rKaM8DiuQO4JN2Ay6xQ==
