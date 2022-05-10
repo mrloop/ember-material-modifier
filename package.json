@@ -76,7 +76,7 @@
     "ember-cli-babel": "7.26.6",
     "ember-cli-beta": "npm:ember-cli@beta",
     "ember-cli-dependency-checker": "3.2.0",
-    "ember-cli-htmlbars": "5.7.1",
+    "ember-cli-htmlbars": "6.0.1",
     "ember-cli-inject-live-reload": "2.1.0",
     "ember-cli-latest": "npm:ember-cli@latest",
     "ember-cli-sri": "2.1.1",
