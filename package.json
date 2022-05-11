@@ -89,7 +89,7 @@
     "ember-qunit": "5.1.4",
     "ember-resolver": "8.0.2",
     "ember-source": "3.28.9",
-    "ember-source-3.20": "npm:ember-source@3.20.7",
+    "ember-source-3.20": "npm:ember-source@4.4.0",
     "ember-source-3.24": "npm:ember-source@3.24.6",
     "ember-source-beta": "npm:ember-source@beta",
     "ember-source-canary": "npm:ember-source@alpha",
