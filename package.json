@@ -107,7 +107,7 @@
     "qunit": "2.16.0",
     "qunit-dom": "1.6.0",
     "release-it": "14.2.1",
-    "release-it-lerna-changelog": "3.1.0",
+    "release-it-lerna-changelog": "4.0.1",
     "rollup": "2.57.0",
     "scenario-tester": "2.0.1",
     "semver": "7.3.5",
