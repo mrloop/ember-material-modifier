@@ -15,7 +15,7 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - uses: volta-cli/action@v1
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
@@ -44,7 +44,7 @@ jobs:
       fail-fast: false
       matrix: ${{fromJson(needs.test.outputs.matrix)}}
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - uses: volta-cli/action@v1
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
@@ -67,7 +67,7 @@ jobs:
     needs: [test, compat-scenarios]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install node
         uses: actions/setup-node@v2
