@@ -5945,7 +5945,7 @@ ember-cli-babel-plugin-helpers@^1.0.0, ember-cli-babel-plugin-helpers@^1.1.1:
   resolved "https://registry.yarnpkg.com/ember-cli-babel-plugin-helpers/-/ember-cli-babel-plugin-helpers-1.1.1.tgz#5016b80cdef37036c4282eef2d863e1d73576879"
   integrity sha512-sKvOiPNHr5F/60NLd7SFzMpYPte/nnGkq/tMIfXejfKHIhaiIkYFqX8Z9UFTKWLLn+V7NOaby6niNPZUdvKCRw==
 
-ember-cli-babel@7.26.11, ember-cli-babel@^7.0.0, ember-cli-babel@^7.13.0, ember-cli-babel@^7.13.2, ember-cli-babel@^7.19.0, ember-cli-babel@^7.22.1, ember-cli-babel@^7.23.0, ember-cli-babel@^7.23.1, ember-cli-babel@^7.26.11, ember-cli-babel@^7.26.6, ember-cli-babel@^7.7.3:
+ember-cli-babel@7.26.11, ember-cli-babel@^7.0.0, ember-cli-babel@^7.13.0, ember-cli-babel@^7.13.2, ember-cli-babel@^7.22.1, ember-cli-babel@^7.23.0, ember-cli-babel@^7.23.1, ember-cli-babel@^7.26.11, ember-cli-babel@^7.26.6, ember-cli-babel@^7.7.3:
   version "7.26.11"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.26.11.tgz#50da0fe4dcd99aada499843940fec75076249a9f"
   integrity sha512-JJYeYjiz/JTn34q7F5DSOjkkZqy8qwFOOxXfE6pe9yEJqWGu4qErKxlz8I22JoVEQ/aBUO+OcKTpmctvykM9YA==
@@ -6525,23 +6525,25 @@ ember-router-generator@^2.0.0:
     "@babel/traverse" "^7.4.5"
     recast "^0.18.1"
 
-"ember-source-3.20@npm:ember-source@3.20.7":
-  version "3.20.7"
-  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.20.7.tgz#090e8f7f3e669b3f48ed9fee2ec5e6a50fe695e4"
-  integrity sha512-WeZ55BRi2kwFQCHydwLfbqJx04ONSrVsGs6IxK0VxNSgtSyQZ0ENLG5O9pad3uR7VeVhspazNPobaY38V8tEow==
+"ember-source-3.20@npm:ember-source@3.28.9", ember-source@3.28.9:
+  version "3.28.9"
+  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.28.9.tgz#804c56b2d71d3cc3decff15a3273bb35d668300a"
+  integrity sha512-Fy7V3yvj+3oyo2+ke52aaihKMcFnnF7Oj9ixj547yzh2faqRfqouB5ZSiwXFH8rxw22rKaM8DiuQO4JN2Ay6xQ==
   dependencies:
     "@babel/helper-module-imports" "^7.8.3"
     "@babel/plugin-transform-block-scoping" "^7.8.3"
     "@babel/plugin-transform-object-assign" "^7.8.3"
     "@ember/edition-utils" "^1.2.0"
-    babel-plugin-debug-macros "^0.3.3"
+    "@glimmer/vm-babel-plugins" "0.80.3"
+    babel-plugin-debug-macros "^0.3.4"
     babel-plugin-filter-imports "^4.0.0"
     broccoli-concat "^4.2.4"
     broccoli-debug "^0.6.4"
+    broccoli-file-creator "^2.1.1"
     broccoli-funnel "^2.0.2"
     broccoli-merge-trees "^4.2.0"
     chalk "^4.0.0"
-    ember-cli-babel "^7.19.0"
+    ember-cli-babel "^7.23.0"
     ember-cli-get-component-path-option "^1.0.0"
     ember-cli-is-package-missing "^1.0.0"
     ember-cli-normalize-entity-name "^1.0.0"
@@ -6550,9 +6552,9 @@ ember-router-generator@^2.0.0:
     ember-cli-version-checker "^5.1.1"
     ember-router-generator "^2.0.0"
     inflection "^1.12.0"
-    jquery "^3.5.0"
+    jquery "^3.5.1"
     resolve "^1.17.0"
-    semver "^6.1.1"
+    semver "^7.3.4"
     silent-error "^1.1.1"
 
 "ember-source-3.24@npm:ember-source@3.24.6":
@@ -6685,38 +6687,6 @@ ember-source-channel-url@^3.0.0:
     ember-router-generator "^2.0.0"
     inflection "^1.13.2"
     resolve "^1.22.0"
-    semver "^7.3.4"
-    silent-error "^1.1.1"
-
-ember-source@3.28.9:
-  version "3.28.9"
-  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.28.9.tgz#804c56b2d71d3cc3decff15a3273bb35d668300a"
-  integrity sha512-Fy7V3yvj+3oyo2+ke52aaihKMcFnnF7Oj9ixj547yzh2faqRfqouB5ZSiwXFH8rxw22rKaM8DiuQO4JN2Ay6xQ==
-  dependencies:
-    "@babel/helper-module-imports" "^7.8.3"
-    "@babel/plugin-transform-block-scoping" "^7.8.3"
-    "@babel/plugin-transform-object-assign" "^7.8.3"
-    "@ember/edition-utils" "^1.2.0"
-    "@glimmer/vm-babel-plugins" "0.80.3"
-    babel-plugin-debug-macros "^0.3.4"
-    babel-plugin-filter-imports "^4.0.0"
-    broccoli-concat "^4.2.4"
-    broccoli-debug "^0.6.4"
-    broccoli-file-creator "^2.1.1"
-    broccoli-funnel "^2.0.2"
-    broccoli-merge-trees "^4.2.0"
-    chalk "^4.0.0"
-    ember-cli-babel "^7.23.0"
-    ember-cli-get-component-path-option "^1.0.0"
-    ember-cli-is-package-missing "^1.0.0"
-    ember-cli-normalize-entity-name "^1.0.0"
-    ember-cli-path-utils "^1.0.0"
-    ember-cli-string-utils "^1.1.0"
-    ember-cli-version-checker "^5.1.1"
-    ember-router-generator "^2.0.0"
-    inflection "^1.12.0"
-    jquery "^3.5.1"
-    resolve "^1.17.0"
     semver "^7.3.4"
     silent-error "^1.1.1"
 
