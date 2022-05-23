@@ -90,7 +90,7 @@
     "ember-resolver": "8.0.3",
     "ember-source": "3.28.9",
     "ember-source-3.20": "npm:ember-source@3.28.9",
-    "ember-source-3.24": "npm:ember-source@3.24.6",
+    "ember-source-3.24": "npm:ember-source@3.28.9",
     "ember-source-beta": "npm:ember-source@beta",
     "ember-source-canary": "npm:ember-source@alpha",
     "ember-source-latest": "npm:ember-source@latest",
