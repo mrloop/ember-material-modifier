@@ -5573,6 +5573,11 @@ deep-is@^0.1.3, deep-is@~0.1.3:
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.4.tgz#a6f2dce612fadd2ef1f519b73551f17e85199831"
   integrity sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==
 
+deepmerge@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
+  integrity sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
+
 defaults@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/defaults/-/defaults-1.0.3.tgz#c656051e9817d9ff08ed881477f3fe4019f3ef7d"
@@ -7852,14 +7857,15 @@ fixturify-project@^2.1.1:
     tmp "^0.0.33"
     type-fest "^0.11.0"
 
-fixturify-project@^4.0.1:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/fixturify-project/-/fixturify-project-4.1.2.tgz#031a63c12354d68b08f0ef699e657b34c27abe90"
-  integrity sha512-xSWHrSZEKWYawnGe8ktra90kJHmKJBVL7so1AdbEruw+mtihkM/OmYQ4NLFcyVsFegKqqGVeu/sC2FqnmXj7Tw==
+fixturify-project@^5.0.0:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/fixturify-project/-/fixturify-project-5.0.3.tgz#83db3932976ee8162180639926d7aa49a82ede71"
+  integrity sha512-b0Wbmllv3As5P1MoCtoMGQLNBOxiHEF8Fs0PHAof+xqpkLd7HqSTtW31XEFJFXQ/FNtDqLKudpbiNNHz5BR7tw==
   dependencies:
     bin-links "^3.0.0"
+    deepmerge "^4.2.2"
     fixturify "^2.1.1"
-    resolve-package-path "^3.1.0"
+    resolve-package-path "^4.0.3"
     tmp "^0.0.33"
     type-fest "^2.3.2"
     walk-sync "^3.0.0"
@@ -12776,12 +12782,12 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-scenario-tester@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/scenario-tester/-/scenario-tester-2.0.1.tgz#e53d5a0b5e63ab438021e1db350ad32b3793a09c"
-  integrity sha512-eOKsyXxYfB5PyNVOLu6vsgT7KuLA87TGZnCkWLY6xKyZfMDmMLmHFfVnYNUQz0AS4XUvQObtVNhmkJwjNsRwtA==
+scenario-tester@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/scenario-tester/-/scenario-tester-2.1.2.tgz#2ea585aa5702e5abbe44ef9ae1cdaa2f2aae0659"
+  integrity sha512-fuwZoavM2v3CyfghIc3gCi36vFDSzIAW1mdgxjUXVQIsoR0aTG657CMnwYAagIN8Aqn1Qt9oJMuqIpggOvybQg==
   dependencies:
-    fixturify-project "^4.0.1"
+    fixturify-project "^5.0.0"
     fs-extra "^9.1.0"
     glob "^7.1.6"
     tmp "^0.2.1"
