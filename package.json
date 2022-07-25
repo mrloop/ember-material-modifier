@@ -111,7 +111,7 @@
     "rollup": "2.77.0",
     "scenario-tester": "2.1.2",
     "semver": "7.3.5",
-    "webpack": "5.73.0"
+    "webpack": "5.74.0"
   },
   "peerDependencies": {
     "@material/animation": "*",
