@@ -68,7 +68,7 @@
     "qunit-dom": "2.0.0",
     "scenario-tester": "2.1.2",
     "semver": "7.3.5",
-    "webpack": "5.73.0"
+    "webpack": "5.74.0"
   },
   "engines": {
     "node": "12.* || 14.* || >= 16"
