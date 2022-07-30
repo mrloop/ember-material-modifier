@@ -15,7 +15,7 @@ module('Integration | Modifier | material', function (hooks) {
   test('it registers MDC class instance', async function (assert) {
     assert.expect(2);
     this.register = (inst) => {
-      assert.equal(inst.constructor.name, 'MDCList');
+      assert.strictEqual(inst.constructor.name, 'MDCList');
     };
     await render(hbs`<div {{material 'list' this.register}}></div>`);
 
@@ -26,7 +26,7 @@ module('Integration | Modifier | material', function (hooks) {
     test('it works with dasherize @material package names', async function (assert) {
       assert.expect(2);
       this.register = (inst) => {
-        assert.equal(inst.constructor.name, 'MDCFormField');
+        assert.strictEqual(inst.constructor.name, 'MDCFormField');
       };
       await render(hbs`<div {{material 'form-field' this.register}}></div>`);
 
@@ -36,7 +36,7 @@ module('Integration | Modifier | material', function (hooks) {
     test('it work with all lowercase @material package names', async function (assert) {
       assert.expect(2);
       this.register = (inst) => {
-        assert.equal(inst.constructor.name, 'MDCTextField');
+        assert.strictEqual(inst.constructor.name, 'MDCTextField');
       };
       await render(hbs`
         <label {{material 'textfield' this.register}} class="mdc-text-field">
