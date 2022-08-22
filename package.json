@@ -109,7 +109,7 @@
     "qunit-dom": "2.0.0",
     "release-it": "15.3.0",
     "release-it-lerna-changelog": "5.0.0",
-    "rollup": "2.78.0",
+    "rollup": "2.78.1",
     "scenario-tester": "2.1.2",
     "semver": "7.3.5",
     "webpack": "5.74.0"
