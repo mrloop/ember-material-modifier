@@ -22,10 +22,10 @@
     "test:ember": "ember test"
   },
   "dependencies": {
-    "@material/button": "13.0.0",
-    "@material/form-field": "13.0.0",
-    "@material/list": "13.0.0",
-    "@material/textfield": "13.0.0"
+    "@material/button": "14.0.0",
+    "@material/form-field": "14.0.0",
+    "@material/list": "14.0.0",
+    "@material/textfield": "14.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.18.13",
