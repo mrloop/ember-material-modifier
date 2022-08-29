@@ -57,7 +57,7 @@
     "ember-source": "3.28.9",
     "ember-template-lint": "4.12.0",
     "ember-material-modifier": "file:..",
-    "eslint": "8.22.0",
+    "eslint": "8.23.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-ember": "11.0.6",
     "eslint-plugin-node": "11.1.0",
