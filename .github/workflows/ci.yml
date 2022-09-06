@@ -16,7 +16,7 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - uses: actions/checkout@v3
-      - uses: volta-cli/action@v2
+      - uses: volta-cli/action@v3
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -45,7 +45,7 @@ jobs:
       matrix: ${{fromJson(needs.test.outputs.matrix)}}
     steps:
       - uses: actions/checkout@v3
-      - uses: volta-cli/action@v2
+      - uses: volta-cli/action@v3
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
