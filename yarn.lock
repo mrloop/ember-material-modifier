@@ -1212,7 +1212,7 @@
     ember-cli-htmlbars "^5.7.1"
     ember-destroyable-polyfill "^2.0.3"
 
-"@ember/test-waiters@3.0.2", "@ember/test-waiters@^3.0.0", "@ember/test-waiters@^3.0.1":
+"@ember/test-waiters@3.0.2", "@ember/test-waiters@^3.0.0":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@ember/test-waiters/-/test-waiters-3.0.2.tgz#5b950c580a1891ed1d4ee64f9c6bacf49a15ea6f"
   integrity sha512-H8Q3Xy9rlqhDKnQpwt2pzAYDouww4TZIGSI1pZJhM7mQIGufQKuB0ijzn/yugA6Z+bNdjYp1HioP8Y4hn2zazQ==
@@ -1243,14 +1243,6 @@
   integrity sha512-7pyHwzT6ESXc3nZsB8rfnirLkUhQWdvj6CkYH+0MUPN74mX4rslf7pnBqZE/KZkW3uBIaBYvU8fxi0hcKC/Paw==
   dependencies:
     "@embroider/shared-internals" "^1.8.3"
-    semver "^7.3.5"
-
-"@embroider/addon-shim@^0.50.0":
-  version "0.50.2"
-  resolved "https://registry.yarnpkg.com/@embroider/addon-shim/-/addon-shim-0.50.2.tgz#9be2ed8cee1086cef63c5baecf8dde8dcdacc24e"
-  integrity sha512-a+pFlXZPovcCNFo05HxXBW9ole43mPyFZnkhvZlLF0f1sHEn9j0sD1Ld2BM/NCERmHcYz9eXQnX1FPNLCDoGEA==
-  dependencies:
-    "@embroider/shared-internals" "^0.50.2"
     semver "^7.3.5"
 
 "@embroider/core@^1.8.3":
@@ -1313,19 +1305,6 @@
     ember-rfc176-data "^0.3.17"
     fs-extra "^9.1.0"
     js-string-escape "^1.0.1"
-    lodash "^4.17.21"
-    resolve-package-path "^4.0.1"
-    semver "^7.3.5"
-    typescript-memoize "^1.0.1"
-
-"@embroider/shared-internals@^0.50.2":
-  version "0.50.2"
-  resolved "https://registry.yarnpkg.com/@embroider/shared-internals/-/shared-internals-0.50.2.tgz#567c5451db31a1f3edc2f64376ce5a0dcaaabacb"
-  integrity sha512-l3SKn1YdxTFBjY3ylYTLHxFY0dG2XxIsjbtZt7Mm6QyZFssWBDg3oWYwBoUpkw/ysjNJf8IcI7reXhB23WXwDw==
-  dependencies:
-    babel-import-util "^1.1.0"
-    ember-rfc176-data "^0.3.17"
-    fs-extra "^9.1.0"
     lodash "^4.17.21"
     resolve-package-path "^4.0.1"
     semver "^7.3.5"
@@ -5855,17 +5834,7 @@ ember-load-initializers@^2.1.2:
     ember-cli-babel "^7.13.0"
     ember-cli-typescript "^2.0.2"
 
-ember-material-modifier@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/ember-material-modifier/-/ember-material-modifier-0.1.5.tgz#9b53a30de5388bc0b47d4d48c49d45784295d615"
-  integrity sha512-4BIZTUUavj4Rebu+8iVaIU+rr8wwoU1eaIqX8PrttKMpu0jF051d1nGQRCznmHk6H1jvuNGc0tPEt+KxHC+1tg==
-  dependencies:
-    "@ember/string" "^3.0.0"
-    "@ember/test-waiters" "^3.0.1"
-    "@embroider/addon-shim" "^0.50.0"
-    ember-modifier "^3.1.0"
-
-ember-modifier@3.2.7, ember-modifier@^3.1.0:
+ember-modifier@3.2.7:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/ember-modifier/-/ember-modifier-3.2.7.tgz#f2d35b7c867cbfc549e1acd8d8903c5ecd02ea4b"
   integrity sha512-ezcPQhH8jUfcJQbbHji4/ZG/h0yyj1jRDknfYue/ypQS8fM8LrGcCMo0rjDZLzL1Vd11InjNs3BD7BdxFlzGoA==
