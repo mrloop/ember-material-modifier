@@ -1,348 +1,47 @@
 {
-  "name": "ember-material-modifier",
   "version": "0.1.5",
-  "description": "Ember Material Design integration",
-  "keywords": [
-    "ember-addon",
-    "material",
-    "design",
-    "ember",
-    "modifier"
-  ],
+  "private": true,
   "repository": "https://github.com/mrloop/ember-material-modifier",
   "license": "MIT",
   "author": "Ewan McDougall <ewan@mrloop.com>",
-  "exports": {
-    "./*": "./dist/*",
-    "./addon-main.js": "./addon-main.js"
-  },
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
-  },
-  "files": [
-    "addon-main.js",
-    "dist"
+  "workspaces": [
+    "ember-material-modifier",
+    "test-app"
   ],
   "scripts": {
-    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*",
-    "lint:hbs": "ember-template-lint .",
-    "lint:js": "eslint .",
-    "lint:devdeps": "addon-dev sync-dev-deps --lint",
-    "scenario:list": "scenario-tester list --files test-app/scenarios.js",
-    "scenario:output": "scenario-tester output --files test-app/scenarios.js --outdir scenario --scenario ",
-    "scenario:run": "cd test-app && qunit scenarios.js --filter ",
+    "prepare": "yarn workspace ember-material-modifier run prepare",
     "start": "npm-run-all --parallel start:*",
-    "start:test-app": "cd test-app && ember serve",
-    "start:build": "rollup --config --watch",
-    "sync-dev-deps": "addon-dev sync-dev-deps",
-    "test": "npm-run-all lint:* test:*",
-    "test:ember": "cd test-app && ember test",
-    "test:ember-compatibility": "cd test-app && qunit scenarios.js",
-    "prepare": "npm-run-all prepublishOnly link-test-app",
-    "link-test-app": "addon-dev link-test-app",
-    "prepublishOnly": "rollup --config"
-  },
-  "dependencies": {
-    "@ember/string": "3.0.0",
-    "@ember/test-waiters": "3.0.2",
-    "@embroider/addon-shim": "1.8.3",
-    "ember-modifier": "3.2.7"
+    "start:addon": "yarn workspace ember-material-modifier run start",
+    "start:test-app": "yarn workspace test-app run start",
+    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
+    "lint:addon": "yarn workspace ember-material-modifier run lint",
+    "lint:test-app": "yarn workspace test-app run lint",
+    "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:fix:*",
+    "lint:fix:addon": "yarn workspace ember-material-modifier run lint:fix",
+    "lint:fix:test-app": "yarn workspace test-app run lint:fix",
+    "test": "npm-run-all --aggregate-output --continue-on-error --parallel \"test:!(watch)\"",
+    "test:watch": "npm-run-all --aggregate-output --continue-on-error --parallel test:watch:*",
+    "test:test-app": "yarn workspace test-app run test",
+    "test:watch:test-app": "yarn workspace test-app run test:watch",
+    "test:watch:addon": "yarn workspace ember-material-modifier run start"
   },
   "devDependencies": {
-    "@babel/core": "7.18.13",
-    "@babel/eslint-parser": "7.18.9",
-    "@babel/plugin-proposal-decorators": "7.18.10",
-    "@ember/optional-features": "2.0.0",
-    "@ember/test-helpers": "2.8.1",
-    "@ember/test-waiters": "3.0.2",
-    "@embroider/addon-dev": "1.8.3",
-    "@embroider/compat-latest": "npm:@embroider/compat@latest",
-    "@embroider/core-latest": "npm:@embroider/core@latest",
-    "@embroider/test-setup": "1.8.3",
-    "@embroider/webpack-latest": "npm:@embroider/webpack@latest",
-    "@glimmer/component": "1.1.2",
-    "@glimmer/tracking": "1.1.2",
-    "@material/button": "14.0.0",
-    "@material/form-field": "14.0.0",
-    "@material/list": "14.0.0",
-    "@material/textfield": "14.0.0",
-    "@rollup/plugin-babel": "5.3.0",
-    "broccoli-asset-rev": "3.0.0",
-    "ember-auto-import": "2.4.2",
-    "ember-cli": "4.6.0",
-    "ember-cli-3.20": "npm:ember-cli@3.28.5",
-    "ember-cli-3.24": "npm:ember-cli@3.28.5",
-    "ember-cli-app-version": "5.0.0",
-    "ember-cli-babel": "7.26.11",
-    "ember-cli-beta": "npm:ember-cli@beta",
-    "ember-cli-dependency-checker": "3.3.1",
-    "ember-cli-htmlbars": "6.1.0",
-    "ember-cli-inject-live-reload": "2.1.0",
-    "ember-cli-latest": "npm:ember-cli@latest",
-    "ember-cli-sri": "2.1.1",
-    "ember-cli-terser": "4.0.2",
-    "ember-export-application-global": "2.0.1",
-    "ember-fetch": "8.1.2",
-    "ember-load-initializers": "2.1.2",
-    "ember-maybe-import-regenerator": "1.0.0",
-    "ember-page-title": "7.0.0",
-    "ember-qunit": "5.1.5",
-    "ember-resolver": "8.0.3",
-    "ember-source": "3.28.9",
-    "ember-source-3.20": "npm:ember-source@3.28.9",
-    "ember-source-3.24": "npm:ember-source@3.28.9",
-    "ember-source-beta": "npm:ember-source@beta",
-    "ember-source-canary": "npm:ember-source@alpha",
-    "ember-source-latest": "npm:ember-source@latest",
-    "ember-template-lint": "4.14.0",
-    "eslint": "8.23.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-ember": "11.0.6",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-qunit": "7.3.1",
-    "loader.js": "4.7.0",
-    "npm-run-all": "4.1.5",
-    "prettier": "2.7.1",
-    "qunit": "2.19.1",
-    "qunit-dom": "2.0.0",
-    "release-it": "15.4.1",
-    "release-it-lerna-changelog": "5.0.0",
-    "rollup": "2.79.0",
-    "scenario-tester": "2.1.2",
-    "semver": "7.3.5",
-    "webpack": "5.74.0"
-  },
-  "peerDependencies": {
-    "@material/animation": "*",
-    "@material/auto-init": "*",
-    "@material/banner": "*",
-    "@material/base": "*",
-    "@material/button": "*",
-    "@material/card": "*",
-    "@material/checkbox": "*",
-    "@material/chips": "*",
-    "@material/circular-progress": "*",
-    "@material/data-table": "*",
-    "@material/density": "*",
-    "@material/dialog": "*",
-    "@material/dom": "*",
-    "@material/drawer": "*",
-    "@material/elevation": "*",
-    "@material/fab": "*",
-    "@material/feature-targeting": "*",
-    "@material/floating-label": "*",
-    "@material/form-field": "*",
-    "@material/icon-button": "*",
-    "@material/image-list": "*",
-    "@material/layout-grid": "*",
-    "@material/line-ripple": "*",
-    "@material/linear-progress": "*",
-    "@material/list": "*",
-    "@material/menu": "*",
-    "@material/menu-surface": "*",
-    "@material/notched-outline": "*",
-    "@material/progress-indicator": "*",
-    "@material/radio": "*",
-    "@material/ripple": "*",
-    "@material/rtl": "*",
-    "@material/segmented-button": "*",
-    "@material/select": "*",
-    "@material/shape": "*",
-    "@material/slider": "*",
-    "@material/sliders": "*",
-    "@material/snackbar": "*",
-    "@material/switch": "*",
-    "@material/tab": "*",
-    "@material/tab-bar": "*",
-    "@material/tab-indicator": "*",
-    "@material/tab-scroller": "*",
-    "@material/textfield": "*",
-    "@material/theme": "*",
-    "@material/tokens": "*",
-    "@material/tooltip": "*",
-    "@material/top-app-bar": "*",
-    "@material/touch-target": "*",
-    "@material/typography": "*"
-  },
-  "peerDependenciesMeta": {
-    "@material/animation": {
-      "optional": true
-    },
-    "@material/auto-init": {
-      "optional": true
-    },
-    "@material/banner": {
-      "optional": true
-    },
-    "@material/base": {
-      "optional": true
-    },
-    "@material/button": {
-      "optional": true
-    },
-    "@material/card": {
-      "optional": true
-    },
-    "@material/checkbox": {
-      "optional": true
-    },
-    "@material/chips": {
-      "optional": true
-    },
-    "@material/circular-progress": {
-      "optional": true
-    },
-    "@material/data-table": {
-      "optional": true
-    },
-    "@material/density": {
-      "optional": true
-    },
-    "@material/dialog": {
-      "optional": true
-    },
-    "@material/dom": {
-      "optional": true
-    },
-    "@material/drawer": {
-      "optional": true
-    },
-    "@material/elevation": {
-      "optional": true
-    },
-    "@material/fab": {
-      "optional": true
-    },
-    "@material/feature-targeting": {
-      "optional": true
-    },
-    "@material/floating-label": {
-      "optional": true
-    },
-    "@material/form-field": {
-      "optional": true
-    },
-    "@material/icon-button": {
-      "optional": true
-    },
-    "@material/image-list": {
-      "optional": true
-    },
-    "@material/layout-grid": {
-      "optional": true
-    },
-    "@material/line-ripple": {
-      "optional": true
-    },
-    "@material/linear-progress": {
-      "optional": true
-    },
-    "@material/list": {
-      "optional": true
-    },
-    "@material/menu": {
-      "optional": true
-    },
-    "@material/menu-surface": {
-      "optional": true
-    },
-    "@material/notched-outline": {
-      "optional": true
-    },
-    "@material/progress-indicator": {
-      "optional": true
-    },
-    "@material/radio": {
-      "optional": true
-    },
-    "@material/ripple": {
-      "optional": true
-    },
-    "@material/rtl": {
-      "optional": true
-    },
-    "@material/segmented-button": {
-      "optional": true
-    },
-    "@material/select": {
-      "optional": true
-    },
-    "@material/shape": {
-      "optional": true
-    },
-    "@material/slider": {
-      "optional": true
-    },
-    "@material/sliders": {
-      "optional": true
-    },
-    "@material/snackbar": {
-      "optional": true
-    },
-    "@material/switch": {
-      "optional": true
-    },
-    "@material/tab": {
-      "optional": true
-    },
-    "@material/tab-bar": {
-      "optional": true
-    },
-    "@material/tab-indicator": {
-      "optional": true
-    },
-    "@material/tab-scroller": {
-      "optional": true
-    },
-    "@material/textfield": {
-      "optional": true
-    },
-    "@material/theme": {
-      "optional": true
-    },
-    "@material/tokens": {
-      "optional": true
-    },
-    "@material/tooltip": {
-      "optional": true
-    },
-    "@material/top-app-bar": {
-      "optional": true
-    },
-    "@material/touch-target": {
-      "optional": true
-    },
-    "@material/typography": {
-      "optional": true
-    }
-  },
-  "engines": {
-    "node": "12.* || 14.* || >= 16"
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.5.1",
+    "release-it": "^14.2.1",
+    "release-it-lerna-changelog": "^3.1.0",
+    "release-it-yarn-workspaces": "^2.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
-  },
-  "ember": {
-    "edition": "octane"
-  },
-  "ember-addon": {
-    "version": 2,
-    "type": "addon",
-    "main": "addon-main.js",
-    "public-assets": {},
-    "app-js": {
-      "./import-css.js": "./dist/_app_/import-css.js",
-      "./modifiers/material.js": "./dist/_app_/modifiers/material.js"
-    }
   },
   "release-it": {
     "plugins": {
       "release-it-lerna-changelog": {
         "infile": "CHANGELOG.md",
         "launchEditor": true
-      }
+      },
+      "release-it-yarn-workspaces": true
     },
     "git": {
       "tagName": "v${version}"
@@ -351,8 +50,6 @@
       "release": true,
       "tokenRef": "GITHUB_AUTH"
     },
-    "npm": {
-      "publish": false
-    }
+    "npm": false
   }
 }

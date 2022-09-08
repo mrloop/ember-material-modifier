@@ -1,0 +1,278 @@
+{
+  "name": "ember-material-modifier",
+  "version": "0.1.5",
+  "description": "Ember Material Design integration",
+  "keywords": [
+    "ember-addon",
+    "material",
+    "design",
+    "ember",
+    "modifier"
+  ],
+  "repository": "https://github.com/mrloop/ember-material-modifier",
+  "license": "MIT",
+  "author": "Ewan McDougall <ewan@mrloop.com>",
+  "files": [
+    "addon-main.js",
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup --config",
+    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
+    "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
+    "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
+    "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "start": "rollup --config --watch",
+    "test": "echo 'A v2 addon does not have tests, run tests in test-app'",
+    "prepare": "yarn build"
+  },
+  "dependencies": {
+    "@ember/string": "3.0.0",
+    "@ember/test-waiters": "3.0.2",
+    "@embroider/addon-shim": "1.8.3",
+    "ember-modifier": "3.2.7"
+  },
+  "devDependencies": {
+    "@babel/core": "7.18.13",
+    "@babel/eslint-parser": "7.18.9",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-decorators": "7.18.10",
+    "@babel/plugin-syntax-decorators": "^7.17.0",
+    "@embroider/addon-dev": "1.8.3",
+    "@rollup/plugin-babel": "5.3.0",
+    "ember-template-lint": "4.14.0",
+    "eslint": "8.23.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-ember": "11.0.6",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "npm-run-all": "4.1.5",
+    "rollup": "2.79.0"
+  },
+  "peerDependencies": {
+    "@material/animation": "*",
+    "@material/auto-init": "*",
+    "@material/banner": "*",
+    "@material/base": "*",
+    "@material/button": "*",
+    "@material/card": "*",
+    "@material/checkbox": "*",
+    "@material/chips": "*",
+    "@material/circular-progress": "*",
+    "@material/data-table": "*",
+    "@material/density": "*",
+    "@material/dialog": "*",
+    "@material/dom": "*",
+    "@material/drawer": "*",
+    "@material/elevation": "*",
+    "@material/fab": "*",
+    "@material/feature-targeting": "*",
+    "@material/floating-label": "*",
+    "@material/form-field": "*",
+    "@material/icon-button": "*",
+    "@material/image-list": "*",
+    "@material/layout-grid": "*",
+    "@material/line-ripple": "*",
+    "@material/linear-progress": "*",
+    "@material/list": "*",
+    "@material/menu": "*",
+    "@material/menu-surface": "*",
+    "@material/notched-outline": "*",
+    "@material/progress-indicator": "*",
+    "@material/radio": "*",
+    "@material/ripple": "*",
+    "@material/rtl": "*",
+    "@material/segmented-button": "*",
+    "@material/select": "*",
+    "@material/shape": "*",
+    "@material/slider": "*",
+    "@material/sliders": "*",
+    "@material/snackbar": "*",
+    "@material/switch": "*",
+    "@material/tab": "*",
+    "@material/tab-bar": "*",
+    "@material/tab-indicator": "*",
+    "@material/tab-scroller": "*",
+    "@material/textfield": "*",
+    "@material/theme": "*",
+    "@material/tokens": "*",
+    "@material/tooltip": "*",
+    "@material/top-app-bar": "*",
+    "@material/touch-target": "*",
+    "@material/typography": "*"
+  },
+  "peerDependenciesMeta": {
+    "@material/animation": {
+      "optional": true
+    },
+    "@material/auto-init": {
+      "optional": true
+    },
+    "@material/banner": {
+      "optional": true
+    },
+    "@material/base": {
+      "optional": true
+    },
+    "@material/button": {
+      "optional": true
+    },
+    "@material/card": {
+      "optional": true
+    },
+    "@material/checkbox": {
+      "optional": true
+    },
+    "@material/chips": {
+      "optional": true
+    },
+    "@material/circular-progress": {
+      "optional": true
+    },
+    "@material/data-table": {
+      "optional": true
+    },
+    "@material/density": {
+      "optional": true
+    },
+    "@material/dialog": {
+      "optional": true
+    },
+    "@material/dom": {
+      "optional": true
+    },
+    "@material/drawer": {
+      "optional": true
+    },
+    "@material/elevation": {
+      "optional": true
+    },
+    "@material/fab": {
+      "optional": true
+    },
+    "@material/feature-targeting": {
+      "optional": true
+    },
+    "@material/floating-label": {
+      "optional": true
+    },
+    "@material/form-field": {
+      "optional": true
+    },
+    "@material/icon-button": {
+      "optional": true
+    },
+    "@material/image-list": {
+      "optional": true
+    },
+    "@material/layout-grid": {
+      "optional": true
+    },
+    "@material/line-ripple": {
+      "optional": true
+    },
+    "@material/linear-progress": {
+      "optional": true
+    },
+    "@material/list": {
+      "optional": true
+    },
+    "@material/menu": {
+      "optional": true
+    },
+    "@material/menu-surface": {
+      "optional": true
+    },
+    "@material/notched-outline": {
+      "optional": true
+    },
+    "@material/progress-indicator": {
+      "optional": true
+    },
+    "@material/radio": {
+      "optional": true
+    },
+    "@material/ripple": {
+      "optional": true
+    },
+    "@material/rtl": {
+      "optional": true
+    },
+    "@material/segmented-button": {
+      "optional": true
+    },
+    "@material/select": {
+      "optional": true
+    },
+    "@material/shape": {
+      "optional": true
+    },
+    "@material/slider": {
+      "optional": true
+    },
+    "@material/sliders": {
+      "optional": true
+    },
+    "@material/snackbar": {
+      "optional": true
+    },
+    "@material/switch": {
+      "optional": true
+    },
+    "@material/tab": {
+      "optional": true
+    },
+    "@material/tab-bar": {
+      "optional": true
+    },
+    "@material/tab-indicator": {
+      "optional": true
+    },
+    "@material/tab-scroller": {
+      "optional": true
+    },
+    "@material/textfield": {
+      "optional": true
+    },
+    "@material/theme": {
+      "optional": true
+    },
+    "@material/tokens": {
+      "optional": true
+    },
+    "@material/tooltip": {
+      "optional": true
+    },
+    "@material/top-app-bar": {
+      "optional": true
+    },
+    "@material/touch-target": {
+      "optional": true
+    },
+    "@material/typography": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "ember": {
+    "edition": "octane"
+  },
+  "ember-addon": {
+    "version": 2,
+    "type": "addon",
+    "main": "addon-main.js",
+    "app-js": {
+      "./import-css.js": "./dist/_app_/import-css.js",
+      "./modifiers/material.js": "./dist/_app_/modifiers/material.js"
+    }
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*",
+    "./addon-main.js": "./addon-main.js"
+  }
+}

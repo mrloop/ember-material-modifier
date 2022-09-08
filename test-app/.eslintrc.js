@@ -2,18 +2,12 @@
 
 module.exports = {
   root: true,
-  parser: '@babel/eslint-parser',
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
-    requireConfigFile: false,
-    babelOptions: {
-      plugins: [
-        [
-          '@babel/plugin-proposal-decorators',
-          { decoratorsBeforeExport: true, version: '2021-12' },
-        ],
-      ],
+    ecmaFeatures: {
+      legacyDecorators: true,
     },
   },
   plugins: ['ember'],
@@ -39,7 +33,6 @@ module.exports = {
         './config/**/*.js',
         './lib/*/index.js',
         './server/**/*.js',
-        './scenarios.js',
       ],
       parserOptions: {
         sourceType: 'script',
@@ -57,7 +50,7 @@ module.exports = {
       },
     },
     {
-      // Test files:
+      // test files
       files: ['tests/**/*-test.{js,ts}'],
       extends: ['plugin:qunit/recommended'],
     },
