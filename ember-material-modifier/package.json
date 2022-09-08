@@ -70,6 +70,7 @@
     "@material/fab": "*",
     "@material/feature-targeting": "*",
     "@material/floating-label": "*",
+    "@material/focus-ring": "*",
     "@material/form-field": "*",
     "@material/icon-button": "*",
     "@material/image-list": "*",
@@ -156,6 +157,9 @@
       "optional": true
     },
     "@material/floating-label": {
+      "optional": true
+    },
+    "@material/focus-ring": {
       "optional": true
     },
     "@material/form-field": {
