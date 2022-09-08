@@ -46,7 +46,7 @@ async function updatePeerDependencies(dependencies) {
   });
   pkg.peerDependencies = Object.fromEntries(Object.entries(pkg.peerDependencies).sort());
   pkg.peerDependenciesMeta = Object.fromEntries(Object.entries(pkg.peerDependenciesMeta).sort());
-  let data = JSON.stringify(pkg, null, 2);
+  let data = JSON.stringify(pkg, null, 2) + '\n';
   await writeFile('package.json', data);
 }
 
