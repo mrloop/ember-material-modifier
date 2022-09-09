@@ -8,6 +8,15 @@
 
 
 
+
+## v1.0.4 (2022-09-09)
+
+#### :bug: Bug Fix
+* [#132](https://github.com/mrloop/ember-material-modifier/pull/132) fix resolution of @ember/test-waiter in consumers ([@mrloop](https://github.com/mrloop))
+
+#### Committers: 1
+- Ewan McDougall ([@mrloop](https://github.com/mrloop))
+
 ## v1.0.3 (2022-09-09)
 
 #### :house: Internal
