@@ -7,6 +7,15 @@
 
 
 
+
+## v1.0.3 (2022-09-09)
+
+#### :house: Internal
+* [#130](https://github.com/mrloop/ember-material-modifier/pull/130) Copy README to addon repo when releasing ([@mrloop](https://github.com/mrloop))
+
+#### Committers: 1
+- Ewan McDougall ([@mrloop](https://github.com/mrloop))
+
 ## v1.0.2 (2022-09-09)
 
 #### :house: Internal
