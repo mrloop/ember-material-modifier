@@ -5,6 +5,15 @@
 
 
 
+
+## v1.0.1 (2022-09-09)
+
+#### :bug: Bug Fix
+* [#128](https://github.com/mrloop/ember-material-modifier/pull/128) root package name required for CI release stage to complete ([@mrloop](https://github.com/mrloop))
+
+#### Committers: 1
+- Ewan McDougall ([@mrloop](https://github.com/mrloop))
+
 ## v1.0.0 (2022-09-09)
 
 #### :bug: Bug Fix
