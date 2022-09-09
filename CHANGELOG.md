@@ -4,6 +4,19 @@
 
 
 
+
+## v1.0.0 (2022-09-09)
+
+#### :bug: Bug Fix
+* [#29](https://github.com/mrloop/ember-material-modifier/pull/29) Fix build ([@mrloop](https://github.com/mrloop))
+
+#### :house: Internal
+* [#127](https://github.com/mrloop/ember-material-modifier/pull/127) Prepare for ember-modifier v4 release ([@mrloop](https://github.com/mrloop))
+* [#115](https://github.com/mrloop/ember-material-modifier/pull/115) Move to monorepo ([@mrloop](https://github.com/mrloop))
+
+#### Committers: 1
+- Ewan McDougall ([@mrloop](https://github.com/mrloop))
+
 ## v0.1.5 (2022-04-18)
 
 #### :memo: Documentation
