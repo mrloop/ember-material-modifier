@@ -1,5 +1,4 @@
 {
-  "name": "ember-material-modifier",
   "version": "1.0.1",
   "private": true,
   "repository": "https://github.com/mrloop/ember-material-modifier",
@@ -42,7 +41,9 @@
         "infile": "CHANGELOG.md",
         "launchEditor": true
       },
-      "@release-it-plugins/workspaces": true
+      "@release-it-plugins/workspaces": {
+        "publish": false
+      }
     },
     "git": {
       "tagName": "v${version}"
