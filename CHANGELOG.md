@@ -6,6 +6,15 @@
 
 
 
+
+## v1.0.2 (2022-09-09)
+
+#### :house: Internal
+* [#129](https://github.com/mrloop/ember-material-modifier/pull/129) Use correct working directory when publishing to npm ([@mrloop](https://github.com/mrloop))
+
+#### Committers: 1
+- Ewan McDougall ([@mrloop](https://github.com/mrloop))
+
 ## v1.0.1 (2022-09-09)
 
 #### :bug: Bug Fix
