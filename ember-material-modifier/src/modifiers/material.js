@@ -30,15 +30,18 @@ async function initClass({ element, name, register }) {
 }
 
 //https://material.io/components?platform=web
-export default modifier(function material(element, [name, register]) {
-  // cause flash of unstyled content
-  // need to add build time step to add css to head / content-for
-  // e.g. when build sees {{material 'list'}} in template add link to css in head
-  importCss(name);
+export default modifier(
+  function material(element, [name, register]) {
+    // cause flash of unstyled content
+    // need to add build time step to add css to head / content-for
+    // e.g. when build sees {{material 'list'}} in template add link to css in head
+    importCss(name);
 
-  let initPromise = initClass({ element, name, register });
+    let initPromise = initClass({ element, name, register });
 
-  return () => {
-    initPromise.then((component) => component?.destroy());
-  };
-});
+    return () => {
+      initPromise.then((component) => component?.destroy());
+    };
+  },
+  { eager: false }
+);
