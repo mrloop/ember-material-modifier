@@ -2001,6 +2001,31 @@
     "@pnpm/network.ca-file" "^1.0.1"
     config-chain "^1.1.11"
 
+"@release-it-plugins/lerna-changelog@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@release-it-plugins/lerna-changelog/-/lerna-changelog-5.0.0.tgz#cbbbc47fd40ef212f2d7c0e24867d3fcea4cd232"
+  integrity sha512-nMhAUptKSfIsiY0c//HuBcd2VT7D/IoxAQNwRgPx+jf3FM7HA5KD4KSl3oLoz4uA4GjvypWQP4ODX8UbWjmUZA==
+  dependencies:
+    execa "^5.1.1"
+    lerna-changelog "^2.2.0"
+    lodash.template "^4.5.0"
+    mdast-util-from-markdown "^1.2.0"
+    tmp "^0.2.1"
+    validate-peer-dependencies "^2.0.0"
+    which "^2.0.2"
+
+"@release-it-plugins/workspaces@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@release-it-plugins/workspaces/-/workspaces-3.0.0.tgz#d2c5143aa5a5f7659973a6a7018993c29efc4fac"
+  integrity sha512-WD4q8mooS9Qj9GKVQKOFlRovOt3Ys0EQwXRYPE1k6P1MvVH1PJwoHqgRRpEaDImH1LUG9QkVF9rKEcCX4CvUIA==
+  dependencies:
+    detect-indent "^6.0.0"
+    detect-newline "^3.1.0"
+    semver "^7.1.3"
+    url-join "^4.0.1"
+    validate-peer-dependencies "^1.0.0"
+    walk-sync "^2.0.2"
+
 "@rollup/plugin-babel@5.3.1":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz#04bc0608f4aa4b2e4b1aebf284344d0f68fda283"
@@ -11706,31 +11731,6 @@ regjsparser@^0.8.2:
   integrity sha512-J3LABycON/VNEu3abOviqGHuB/LOtOQj8SKmfP9anY5GfAVw/SPjwzSjxGjbZXIxbGfqTHtJw58C2Li/WkStmA==
   dependencies:
     jsesc "~0.5.0"
-
-release-it-lerna-changelog@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/release-it-lerna-changelog/-/release-it-lerna-changelog-5.0.0.tgz#2df62efc4c7435959201e7d4b50e72db4c111d0e"
-  integrity sha512-s/rHzwAwp878bivWKsJKNya9SRVKYZjgpyyGzg5ddBKZY5u5lhTWhxHtld7mHTRg4azIN7YypPH3rGaOfVmNVw==
-  dependencies:
-    execa "^5.1.1"
-    lerna-changelog "^2.2.0"
-    lodash.template "^4.5.0"
-    mdast-util-from-markdown "^1.2.0"
-    tmp "^0.2.1"
-    validate-peer-dependencies "^2.0.0"
-    which "^2.0.2"
-
-release-it-yarn-workspaces@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/release-it-yarn-workspaces/-/release-it-yarn-workspaces-3.0.0.tgz#6f254b7e97e1f303f6cf9d109e53d17c46082218"
-  integrity sha512-OwrnvDSBEp/L4dLL3JMTiD1Qi1poEK2a6E7o1iqygywSCwM6hMTVN4RNV6MsC5Sjqx7T+RZ5o/lAN54oguDkAA==
-  dependencies:
-    detect-indent "^6.0.0"
-    detect-newline "^3.1.0"
-    semver "^7.1.3"
-    url-join "^4.0.1"
-    validate-peer-dependencies "^1.0.0"
-    walk-sync "^2.0.2"
 
 release-it@15.4.1:
   version "15.4.1"
