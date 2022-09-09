@@ -101,6 +101,9 @@ jobs:
         run: npx auto-dist-tag@1 --write
         working-directory: 'ember-material-modifier'
 
+      - name: cp README
+        run: cp README.md ember-material-modifier
+
       - name: publish to npm
         run: npm publish
         working-directory: 'ember-material-modifier'
