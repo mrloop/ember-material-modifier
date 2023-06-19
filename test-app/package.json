@@ -33,7 +33,7 @@
     "@material/form-field": "14.0.0",
     "@material/list": "14.0.0",
     "@material/textfield": "14.0.0",
-    "babel-eslint": "10.1.0",
+    "@babel/eslint-parser": "7.11.0",
     "broccoli-asset-rev": "3.0.0",
     "ember-auto-import": "2.4.3",
     "ember-cli": "4.8.0",
